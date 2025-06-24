@@ -1,0 +1,26 @@
+.home-container {
+text-align: center;
+}
+
+.home-banner {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  
+}
+
+.home-message {
+padding: 20px;
+}
+
+.home-message h1 {
+font-size: 2.5rem;
+color: #333;
+}
+
+.home-message p {
+font-size: 1.2rem;
+color: #555;
+}

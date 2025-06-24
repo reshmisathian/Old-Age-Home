@@ -1,0 +1,182 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: transparent; 
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.MuiPaper-root {
+  transition: all 0.3s ease;
+}
+
+.highlight-card {
+  border-left: 4px solid #ff5722;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 87, 34, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 87, 34, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 87, 34, 0);
+  }
+}
+
+.appointment-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.appointment-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.MuiTab-root {
+  min-height: 64px !important;
+}
+
+.MuiAutocomplete-popper {
+  z-index: 1400 !important;
+}
+
+@media (max-width: 768px) {
+  .appointment-card {
+    margin-bottom: 1rem;
+  }
+  
+  .MuiTabs-root {
+    overflow-x: auto;
+  }
+  
+  .MuiTab-root {
+    min-height: 48px !important;
+    padding: 12px !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.appointment-today {
+  border-left-color: #4CAF50 !important;
+}
+
+.appointment-tomorrow {
+  border-left-color: #FF9800 !important;
+}
+
+.appointment-upcoming {
+  border-left-color: #2196F3 !important;
+}
+
+.appointment-urgent {
+  border-left-color: #FF5722 !important;
+}
+
+.MuiChip-root.status-completed {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.MuiChip-root.status-pending {
+  background-color: #FF9800;
+  color: white;
+}
+
+.MuiChip-root.status-cancelled {
+  background-color: #F44336;
+  color: white;
+}
+
+.MuiDialog-paper {
+  border-radius: 12px !important;
+}
+
+.MuiFormControl-root {
+  margin-bottom: 16px !important;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.appointment-avatar {
+  width: 56px;
+  height: 56px;
+  margin-right: 16px;
+  border: 2px solid #e0e0e0;
+}
+
+.appointment-divider {
+  margin: 12px 0 !important;
+}
+
+@media (max-width: 480px) {
+  .appointment-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .appointment-avatar {
+    width: 40px;
+    height: 40px;
+  }
+}
